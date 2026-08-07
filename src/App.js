@@ -2,13 +2,9 @@
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        Hello World!!!
-      </header>
-    </div>
-  );
+  const jsx = <h1>YO</h1>
+  return jsx
+
 }
 
 export default App;
