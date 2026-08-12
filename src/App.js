@@ -10,7 +10,7 @@ function App() {
       <p>I love {test}</p>
       <h1>{String(true)}</h1>
       {
-        test.map(value => <h1>{value}</h1>)
+        test.map(value => <h1 key={test}>{value}</h1>)
         // Map is used instead of loops in JSX. 
       }
 
