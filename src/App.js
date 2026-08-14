@@ -44,9 +44,14 @@ function App() {
             <img className="pet-image" src={pet.image} alt={pet.name} width="20%" ></img>
             <p>{pet.description}</p>
             <ul>
-              <li></li>
-              <li></li>
-              <li></li>
+              {/* <li>{pet.skills[0]}</li>
+              <li>{pet.skills[1]}</li>
+              <li>{pet.skills[2]}</li> */}
+
+              {/* All this is hardcoded, which one should avoid */}
+
+              {pet.skills.map((skill, index) => <li key={index}>{skill}</li>)}
+
             </ul>
           </li>
         ))}
