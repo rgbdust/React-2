@@ -42,6 +42,12 @@ function App() {
           <li key={index}>
             <h1>{pet.name}</h1>
             <img className="pet-image" src={pet.image} alt={pet.name} width="20%" ></img>
+            <p>{pet.description}</p>
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
           </li>
         ))}
       </ul>
