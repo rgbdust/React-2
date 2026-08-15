@@ -7,7 +7,7 @@ li {
 }
 
 .pet-image {
-  width: 20%;
+  width: 100%;
   border-radius: 0px;
   object-fit: cover;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -31,9 +31,14 @@ li {
 
 .top-level-list {
   display: flex;
+  height: 100vh;
 }
 
 .top-level-list-item {
   display: flex;
   flex-direction: column;
+}
+
+.skill-list {
+  padding: 0px;
 }
