@@ -35,11 +35,11 @@ function App() {
     }
   ];
   return (
-    <div>
-      <h1>Pets</h1>
-      <ul>
+    <div className="app-container">
+      <h1 className="my-pets-heading">My Pets</h1>
+      <ul className="top-level-list">
         {pets.map((pet, index) => (
-          <li key={index}>
+          <li key={index} className="top-level-list-item">
             <h1>{pet.name}</h1>
             <img className="pet-image" src={pet.image} alt={pet.name} width="20%" ></img>
             <p>{pet.description}</p>
@@ -56,8 +56,6 @@ function App() {
           </li>
         ))}
       </ul>
-
-
     </div >
     // <div className="App">
     //   <h1>You know what</h1>

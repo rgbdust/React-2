@@ -2,6 +2,9 @@
   text-align: center;
 }
 
+li {
+  list-style: none;
+}
 
 .pet-image {
   width: 20%;
@@ -14,4 +17,23 @@
 .pet-image:hover {
   transform: scale(1.05);
   animation: ease-out;
+}
+
+.AppContainer {
+  background-color: beige;
+  padding: 10px 10px 10px 10px;
+  height: 100vh;
+}
+
+.MainHeading {
+  margin: 0px;
+}
+
+.top-level-list {
+  display: flex;
+}
+
+.top-level-list-item {
+  display: flex;
+  flex-direction: column;
 }
