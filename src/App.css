@@ -1,44 +1,45 @@
 .App {
   text-align: center;
+  background-color: wheat;
+  height: 100vh;
+  margin: 0px;
+  /* vertical-align: middle; */
+}
+
+.App>h1 {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 li {
   list-style: none;
 }
 
+.container {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5em;
+  margin: 10px;
+  /* background-color: white; */
+}
+
+.container>li {
+  border: 5px solid whitesmoke;
+  padding: 0.5em;
+  background-color: white;
+}
+
 .pet-image {
-  width: 100%;
-  border-radius: 0px;
+  width: 250px;
+  height: 250px;
   object-fit: cover;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
+  border-radius: 12px;
 }
 
-.pet-image:hover {
-  transform: scale(1.05);
-  animation: ease-out;
-}
-
-.AppContainer {
-  background-color: beige;
-  padding: 10px 10px 10px 10px;
-  height: 100vh;
-}
-
-.MainHeading {
-  margin: 0px;
-}
-
-.top-level-list {
-  display: flex;
-  height: 100vh;
-}
-
-.top-level-list-item {
-  display: flex;
-  flex-direction: column;
-}
-
-.skill-list {
+.skills {
   padding: 0px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
 }
